@@ -63,7 +63,7 @@ async.waterfall([
               var info= stream_info.split(',');
             console.log(info[0]);
             console.log(info[1]);
-            var post_text = info[0]+ "が"+info[1]+ "で配信を開始しました"+ "http://live.nicovideo.jp/watch/lv" + live_id;
+            var post_text = info[0]+ "さんが"+info[1]+ "で配信を開始しました"+ "http://live.nicovideo.jp/watch/lv" + live_id;
             if(prev_post_text != post_text){
             hook.send(post_text);
               }
