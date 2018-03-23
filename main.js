@@ -59,10 +59,11 @@ async.waterfall([
           live_ids.forEach(function(live_id) {
               console.log(live_id);
             var prev_post_text;
-              //var stream_info=NicoLiveAlert.retrievePlayerstatus(live_id);
-            
-            //var info=stream_info.split(",");
-            var post_text = "配信が開始されました"+ "http://live.nicovideo.jp/watch/lv" + live_id;
+              var stream_info=NicoLiveAlert.retrievePlayerstatus(live_id);
+              var info= stream_info.split(',');
+            console.log(info[0]);
+            console.log(info[1]);
+            var post_text = info[0]+ "が"+info[1]+ "で配信を開始しました"+ "http://live.nicovideo.jp/watch/lv" + live_id;
             if(prev_post_text != post_text){
             hook.send(post_text);
               }

@@ -1,5 +1,7 @@
 #  Made by Discord sample bot working on glitch.com
-
+## Thanks for makers who created below:
+ニコ生アラート関係:(for api):https://github.com/fagai/nicolive-alert-slack
+Discord sample bot:         https://qiita.com/vvani06/items/f437c5e89aeabc587a96
 ## How to launch bot
 
 1. Import this repository to `glitch.com`.
